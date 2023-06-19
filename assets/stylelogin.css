@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+body {
+  background: url("./img/login/ash2.jfif") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin: 250px auto;
+  padding: 20px;
+}
+
+.login-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #990000;
+}
+
+.forgot-links a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.forgot-links a:hover {
+  color: #990000;
+}
+
+.signup-link {
+  text-align: center;
+}
+
+.signup-link a {
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #990000;
+}
+
+.pokemon-image {
+  max-width: 1000px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-image img {
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .login-form button[type="submit"] {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-form button:hover {
+    background-color: #990000;
+  }
+
+  .login-form .forgot-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .login-form .signup-link {
+    text-align: center;
+  }
+
+  .pokemon-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pokemon-image {
+    display: none;
+  }
+}
